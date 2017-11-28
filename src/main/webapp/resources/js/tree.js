@@ -1,5 +1,3 @@
-/* jQuery Nxeed's Tree Menu v1 | (c) 2014 Nxeed | https://github.com/nxeed */
-
 (function($) {
     var defaults = {
         autoParentDetection: true,
@@ -81,7 +79,7 @@
         } else if (typeof method === 'object' || !method) {
             return methods.init.apply(this, arguments);
         } else {
-            $.error('Метод "' + method + '" не найден в плагине jQuery.ntm');
+            $.error('Method "' + method + '" was not found in the pluggin jQuery.ntm');
         }
     };
 })(jQuery);

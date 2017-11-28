@@ -165,7 +165,7 @@ $('#edit, #new').click(function(e) {
 		 	 }
 			 if (!articleToServer.articleName || !articleToServer.catalogName) {
 				 if (isNew){
-			 	createDialog("Warning", "Name of catalog and article are required fields");
+			 	createDialog("Warning", "Name of catalog and article are the required fields");
 			 	return;
 				 }else{
 					 if (!articleToServer.articleName) articleToServer.articleName = articleFromServer.articleName;
@@ -174,11 +174,11 @@ $('#edit, #new').click(function(e) {
 				 }
 			 }
 			if ((articleToServer.content === articleFromServer.content) && (articleToServer.articleName === articleFromServer.articleName) && (articleToServer.catalogId === articleFromServer.catalogId)){
-						  createDialog("Warning", "Article data does not change");
+						  createDialog("Warning", "Article data wasn't changed");
 						  return;
 			  }
 			 
-			 createDialog("Saving", "Are you really want to save this cool story?", function (result) {
+			 createDialog("Saving", "Do you want to save?", function (result) {
 			 	  if (result){
 				 		$.ajax({
 				 			type: "POST",
@@ -215,7 +215,7 @@ $('#history').click(function(e) {
  	        	contentOld = JSON.parse(data);
  	        }
  		}); 	
-     	if (contentOld.length === 0) contentDiv.html ("History doesn't exists for this article");
+     	if (contentOld.length === 0) contentDiv.html ("History doesn't exist for this article");
      	else {
      	for (var i=0; i < contentOld.length; i++){
      		$('<a/>', {'link':contentOld[i].datetime,'href': "#"}).html (contentOld[i].datetime).appendTo(contentDiv);

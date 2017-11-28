@@ -145,11 +145,11 @@ $('#save').click(function(e){
 	if (action === "DeleteCatalog"){
 		listArticles = $.grep(list, function(e){ return e.catalogId == toSave[1]; });
 		if (listArticles[0].articles.length > 0){
-			createDialog("Warning", "Cannot be removed not empty catalog");
+			createDialog("Warning", "Cannot remove not empty catalog");
 			return;
 		}
 	}
-	createDialog("Saving", "Are you really want to save changes?", function (result) {
+	createDialog("Saving", "Do you want to save changes?", function (result) {
 	 	  if (result){
 		 		$.ajax({
 		 			type: "POST",
