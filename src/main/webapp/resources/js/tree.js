@@ -79,7 +79,7 @@
         } else if (typeof method === 'object' || !method) {
             return methods.init.apply(this, arguments);
         } else {
-            $.error('Method "' + method + '" was not found in the pluggin jQuery.ntm');
+            $.error('Method "' + method + '" was not found in the jQuery.ntm plugin');
         }
     };
 })(jQuery);
