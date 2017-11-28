@@ -1,0 +1,56 @@
+.tree-menu ul { list-style: none; }
+
+.tree-menu > ul { padding: 0; }
+
+.tree-menu a {
+  display: block;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  margin-bottom: 1px;
+  color: #002888;
+}
+
+.tree-menu a:hover {
+  color: #f53d3e;
+  -moz-transition: background-color 0.1s linear;
+  -webkit-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+
+.tree-menu .active > a:hover,
+.tree-menu .selected > a,
+.tree-menu a:hover { 
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+.tree-menu .selected > a {
+  color: #f53d3e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tree-menu .active > a { 
+	  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+.tree-menu .closed > a,
+.tree-menu .opened > a {
+  padding-left: 24px;
+  background-position: 4px 8px;
+  background-repeat: no-repeat;
+}
+
+.tree-menu .closed > a { background-image: url(../image/icon-expand.gif); }
+
+.tree-menu .opened > a { background-image: url(../image/icon-collapse.gif); }

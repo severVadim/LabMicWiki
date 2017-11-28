@@ -1,0 +1,214 @@
+  body {
+    font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+    margin: 0; /* Отступы на странице */
+    background: url(../image/background.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+   }
+   h1 {
+    font-size: 36px; /* Размер шрифта */
+    margin: 0; /* Убираем отступы */
+    color: #fc6; /* Цвет текста */
+   }
+   h2 {
+    margin-top: 0; /* Убираем отступ сверху */
+   }
+   #header { /* Верхний блок */
+    height: 50px;
+    width: 100%;
+    top: 0;   
+    padding: 5px; /* Поля вокруг текста */
+    position: fixed;
+    z-index:2;
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    background: #fff;
+   }
+   #menu{ /* Левая колонка */
+    float: left; /* Обтекание справа */
+    width: 20%; /* Ширина колонки */
+    padding: 5px; /* Поля вокруг текста */
+    margin: 80px 10px 20px 5px; /* Значения отступов */
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    position: fixed;
+   }
+   #main {
+    margin: 80px 25px 20px 25%;
+    padding: 10px 10px 50px 10px; 
+    border: 0px solid #ccc;
+    postion: relative;
+   }
+   #footer { /* Нижний блок */
+    height: 50px;
+    width: 100%;
+    position: -ms-device-fixed;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
+    text-aligin: end;
+   }
+
+.button {
+  width: 80px;
+  height:30px;	
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #87CEFA;
+  border-radius: 5px;
+  color: #87CEFA;
+  
+
+}
+
+
+#menu .button{	
+	font: 14pt Arial, Helvetica, sans-serif;
+	color: black;
+	display: table-footer-group;
+  	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.button:active, .button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.btn-group-wrap {
+	margin: 10px 5px 5px 5px; 
+    text-align: center;
+}
+
+div.btn-group {
+    margin: 0px 0px 0px 20%; 
+    text-align: center;
+    width: 40%;
+    display: inline-block;
+}
+div.btn-login{
+    margin: 0 auto; 
+    float: right;
+    text-align: right;
+    width: 20%;
+    display: inline-block;
+}
+
+.form-box {
+  width: 235px;
+  height: 29px;
+}
+
+table {
+text-align: left;
+width: 100%;	
+padding: 5px;
+margin:5px;
+}
+
+.form-box input{
+  float: left;
+  border: none;
+}
+input[type="text"]{
+    width: 183px;
+    height: 28px;
+    outline: none;
+    padding: 0 37px 1px 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    transition:0.2s ease-in-out;
+    border-radius: 5px 5px 5px 5px;
+   -webkit-calendar-picker-indicator-display:none;
+}
+select{
+    width: 183px;
+    height: 28px;
+    outline: none;
+    padding: 0 37px 1px 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    transition:0.2s ease-in-out;
+    border-radius: 5px 5px 5px 5px;
+}
+
+@-moz-document url-prefix() {
+.form-box input{
+    height: 27px;
+    padding-bottom: 2px;
+  }
+}
+.form-box input[type="submit"]{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: -30px;
+    margin-top: 3px;
+	background: url(../image/search.png)no-repeat;
+}
+.form-box input[type="text"]:focus, .form-box input[type="text"]:hover{
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+}
+.form-box input[type="submit"]:focus, .form-box input[type="submit"]:hover{
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+.content-container{
+    position: relative;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.edit-preview{
+    text-align: justify;
+}
+#caption .tr{
+	font: 15pt Arial, Helvetica, sans-serif;
+}
+form-box option{
+    text-align: left;
+    height:30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.7);
+    transition:0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.ui-widget-header,.ui-state-default{
+       background:#03B1FC;
+       border: 1px solid #03B1FC;
+       color: #FFFFFF;
+       font-weight: bold;
+}
+.ui-widget-content, .ui-button{
+	color: #002888;
+	background: #eeeeee;
+}
+
+#searchResults{
+	width: 217px;
+	margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+#header img{
+	position: fixed;
+	top:0;
+	left:0;
+}
